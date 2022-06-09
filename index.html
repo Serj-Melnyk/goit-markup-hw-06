@@ -69,6 +69,40 @@
             <div class="backdrop is-hidden" data-modal>
 
                 <div class="modal">
+                    <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+                    <form class="modal-form">
+                        <div class="modal-field">
+                            <label class="modal-label" for="name">Имя</label>
+                            <input class="modal-input" type="name" name="name" id="name">
+                        </div>
+                        <div class="modal-field">
+                            <label class="modal-label" for="tel">Телефон</label>
+                            <input class="modal-input" type="tel" name="tel" id="tel">
+                        </div>
+                        <div class="modal-field">
+                            <label class="modal-label" for="mail">Почта</label>
+                            <input class="modal-input" type="email" name="mail" id="mail">
+                        </div>
+                        <div class="modal-field">
+                            <label class="modal-label" for="comments">Комментарий</label>
+                            <textarea name="comments" id="comments" placeholder="Введите текст" rows="10"></textarea>
+                        </div>
+                    </form>
+
+                    <div class="modal-field">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">Соглашаюсь с рассылкой и принимаю
+                            <a class="contract-link" href=""><span class="contract">Условия договора</span></a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="button-sub" disabled>Отправить</button>
+
+
+
+
+
+
 
                     <button data-modal-close class="modal-close" type="button" aria-label="Закрыть">
                         <svg class="icon-close" width="11" height="11">
@@ -510,10 +544,18 @@
                 <div class="subscription">
 
                     <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+                    <form class="form-subscription">
+                        <div class="form-field">
+                            <label for="mail">E-mail</label>
+                            <input type="email" class="form-input" name="mail" id="mail" placeholder=" ">
+                        </div>
 
-                    <input type="email" class="form-input" name="mail" id="mail" placeholder="E-mail">
-
-                    <button type="submit">Подписаться</button>
+                        <button type="submit" class="button-sub">Подписаться
+                            <svg class="icon-subscription" width="24" height="24">
+                                <use href="./images/svg/sprite.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
 
                 </div>
             </div>
